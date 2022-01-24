@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState, Suspense } from 'react'
-import { Canvas, useFrame, useLoader } from '@react-three/fiber'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { useRef, useState } from 'react'
+import { Canvas, useFrame } from '@react-three/fiber'
 import './App.css'
 import type { Mesh } from 'three'
 
