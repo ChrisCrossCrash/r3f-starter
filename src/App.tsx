@@ -29,7 +29,6 @@ const Box = (props: BoxProps) => {
 }
 
 function App() {
-  // const gltf = useLoader(GLTFLoader, '/donut.glb')
   return (
     <div id='three-wrapper'>
       <Canvas camera={{ fov: 55 }}>
