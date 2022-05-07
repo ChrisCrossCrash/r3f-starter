@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import './App.scss'
+import styles from './App.module.scss'
 import type { Mesh } from 'three'
 
 type BoxProps = JSX.IntrinsicElements['mesh']
@@ -30,7 +30,7 @@ const Box = (props: BoxProps) => {
 
 function App() {
   return (
-    <div id='three-wrapper'>
+    <div className={styles.threeWrapper}>
       <Canvas camera={{ fov: 55 }}>
         <pointLight position={[10, 10, 10]} intensity={0.5} />
         <Box position={[-1.2, 0, 0]} />

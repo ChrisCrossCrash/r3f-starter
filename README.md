@@ -6,7 +6,7 @@ This is a starter template for a React Three Fiber project. You can see the star
 
 - Typescript
 - Prettier
-- Sass
+- Sass (with module support)
 - Removed some boilerplate code
 
 ## Available Scripts
