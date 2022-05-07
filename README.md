@@ -8,6 +8,7 @@ This is a starter template for a React Three Fiber project. You can see the star
 - Prettier
 - Sass (with module support)
 - Removed some boilerplate code
+- [Lint Staged](https://github.com/okonet/lint-staged)
 
 ## Available Scripts
 
