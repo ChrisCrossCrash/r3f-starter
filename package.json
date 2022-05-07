@@ -17,6 +17,8 @@
     "@types/react-dom": "^18.0.0",
     "@types/three": ">=0.140.0",
     "eslint-config-prettier": "^8.3.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
     "prettier": "^2.5.1",
     "typescript": "^4.5.5",
     "typescript-plugin-css-modules": "^3.4.0"
@@ -25,7 +27,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +46,13 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "*.{md,html,css,scss}": "prettier --write",
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --cache"
     ]
   }
 }
