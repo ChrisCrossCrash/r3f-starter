@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import './App.css'
+import './App.scss'
 import type { Mesh } from 'three'
 
 type BoxProps = JSX.IntrinsicElements['mesh']
